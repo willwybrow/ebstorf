@@ -40,6 +40,7 @@ message Point { // this doubles as a unique ID for any node or cell
 message Node {
     // uint64 id = 1; // let's say the ID is a 128 bit value formed from byte-encoding latitude and longitude
     Point position = 2;
+    repeated Point neighbour_node_positions = 4;
     repeated Quantity quantities = 5;
     repeated Quality qualities = 6;
 }
