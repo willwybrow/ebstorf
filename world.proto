@@ -39,7 +39,7 @@ message Node {
     repeated Quantity quantities = 5;
     repeated Quality qualities = 6;
 
-    repeated StructureReference perimeter = 11;
+    reserved 11;
 }
 
 message Cell {
