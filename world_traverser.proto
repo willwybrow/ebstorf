@@ -1,0 +1,14 @@
+syntax = "proto3";
+option java_multiple_files = true;
+option java_package = "uk.wycobar.ebstorf";
+option java_outer_classname = "WorldTraverserProto";
+
+import "ebstorf/world.proto";
+
+package uk.wycobar.ebstorf;
+
+service WorldTraverser {
+    rpc GetCell(StructureRequest) returns (Cell);
+    rpc GetNode(StructureRequest) returns (Node);
+    rpc GetStartingCell(WorldRequest) returns (Cell);
+}
