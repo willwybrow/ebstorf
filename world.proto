@@ -10,7 +10,7 @@ message WorldRequest {
 
 message StructureRequest {
     // for asking for something specific in a world
-    string world_id = 1;
+    uint64 world_id = 1;
     string id = 2;
 
     StructureType type = 4;
