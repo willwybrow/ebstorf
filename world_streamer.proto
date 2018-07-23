@@ -15,6 +15,7 @@ service WorldStreamer {
 
 message WorldGenerationResult {
     WorldGenerationStatus status = 1;
+    World world = 2;
 }
 
 enum WorldGenerationStatus {
