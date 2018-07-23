@@ -8,6 +8,7 @@ import "ebstorf/world.proto";
 package uk.wycobar.ebstorf;
 
 service WorldTraverser {
+    rpc GetWorld(WorldRequest) returns (World);
     rpc GetCell(StructureRequest) returns (Cell);
     rpc GetNode(StructureRequest) returns (Node);
     rpc GetStartingCell(WorldRequest) returns (Cell);
