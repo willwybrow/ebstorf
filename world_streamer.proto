@@ -11,6 +11,7 @@ service WorldStreamer {
     rpc GenerateWorld(WorldRequest) returns (WorldGenerationResult) {}
     rpc GetWorldNodes(WorldRequest) returns (stream Node) {}
     rpc GetWorldCells(WorldRequest) returns (stream Cell) {}
+    rpc GetCartesianWorld(WorldRequest) returns (stream CartesianStructure) {}
 }
 
 message WorldGenerationResult {
