@@ -1,7 +1,8 @@
 syntax = "proto3";
 option java_multiple_files = true;
-option java_package = "uk.wycobar.ebstorf";
+option java_package = "uk.wycor.ebstorf";
 option java_outer_classname = "WorldTraverserProto";
+option csharp_namespace = "Everett.Ebstorf";
 
 import "ebstorf/world.proto";
 
